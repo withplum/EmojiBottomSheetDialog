@@ -1,2 +1,3 @@
+include ':emojiBottomSheetDialog'
 include ':app'
 rootProject.name = "EmojiBottomSheetDialog"
