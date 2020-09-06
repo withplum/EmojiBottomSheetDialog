@@ -1,5 +1,9 @@
 allprojects {
     ext {
+        MIN_SDK = 23
+        COMPILE_SDK = 29
+        TARGET_SDK = 29
+
         ANDROID_GRADLE_PLUGIN = '4.0.1'
         KOTLIN = '1.3.72'
     }
