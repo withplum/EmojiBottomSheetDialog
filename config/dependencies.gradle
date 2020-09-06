@@ -1,0 +1,6 @@
+allprojects {
+    ext {
+        ANDROID_GRADLE_PLUGIN = '4.0.1'
+        KOTLIN = '1.3.72'
+    }
+}
