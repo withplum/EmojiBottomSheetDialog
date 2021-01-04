@@ -1,0 +1,11 @@
+<resources>
+    <string name="emojiDialogTitle">Choose an emoji:</string>
+    <string name="activitiesCategoryTitle">Activity</string>
+    <string name="smileysAndPeopleTitle">Smileys and People</string>
+    <string name="foodAndDrinkTitle">Food and Drink</string>
+    <string name="animalsAndNatureTitle">Animals and Nature</string>
+    <string name="travelAndPlacesTitle">Travel and Places</string>
+    <string name="objectsTitle">Objects</string>
+    <string name="symbolsTitle">Symbols</string>
+    <string name="flagsTitle">Flags</string>
+</resources>
