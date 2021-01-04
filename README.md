@@ -1,6 +1,8 @@
 # EmojiBottomSheetDialog
 A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported emojis.
 
+![EmojiBottomSheetDialog gif](https://i.imgur.com/0GisGjI.gif)
+
 ## Usage
 
 ```kotlin
