@@ -21,4 +21,13 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
+
+    // ------------ Material ------------
+    implementation "com.google.android.material:material:${Androidx.MATERIAL}"
+
+    // ------------ Emojis ------------
+    api "androidx.emoji:emoji:${Androidx.EMOJI}"
+
+    // ------------ Recyclerview ------------
+    implementation "androidx.recyclerview:recyclerview:${Androidx.RECYCLER_VIEW}"
 }
