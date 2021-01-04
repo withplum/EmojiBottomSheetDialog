@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:layout_height="wrap_content"
+    tools:layout_width="match_parent"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        android:id="@+id/tv_emoji_category_title"
+        android:textAppearance="@style/EmojiBottomSheet.TextAppearance.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_16"
+        android:gravity="start"
+        android:textColor="@color/greyMid"
+        tools:text="connectingToBankKey" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_emoji_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dim_16"
+        android:paddingEnd="@dimen/dim_16" />
+</merge>
