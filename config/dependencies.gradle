@@ -4,16 +4,16 @@ allprojects {
         COMPILE_SDK = 29
         TARGET_SDK = 29
 
-        ANDROID_GRADLE_PLUGIN = '4.0.1'
+        ANDROID_GRADLE_PLUGIN = '4.1.1'
 
-        KOTLIN = '1.4.10'
+        KOTLIN = '1.4.21'
 
         VERSION_CODE = 1
         VERSION_NAME = "1"
 
         Androidx = [
-                APPCOMPAT       : "1.1.0",
-                CONSTRAINTLAYOUT: "1.1.3",
+                APPCOMPAT       : "1.2.0",
+                CONSTRAINTLAYOUT: "2.0.4",
                 EMOJI           : "1.1.0",
                 MATERIAL        : "1.2.1",
                 RECYCLERVIEW    : "1.1.0",
