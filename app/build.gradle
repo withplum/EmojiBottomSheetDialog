@@ -21,7 +21,6 @@ android {
 
 dependencies {
     implementation project(':emojiBottomSheetDialog')
-    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
     implementation "androidx.constraintlayout:constraintlayout:${Androidx.CONSTRAINTLAYOUT}"
     implementation "androidx.appcompat:appcompat:${Androidx.APPCOMPAT}"
