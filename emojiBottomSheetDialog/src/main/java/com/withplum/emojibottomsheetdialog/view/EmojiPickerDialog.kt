@@ -6,10 +6,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.withplum.emojibottomsheetdialog.view.recyclerview.EmojiRecyclerViewAdapter
-import com.withplum.emojibottomsheetdialog.view.recyclerview.EmojiItemView
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.withplum.emojibottomsheetdialog.R
+import com.withplum.emojibottomsheetdialog.view.recyclerview.EmojiItemView
+import com.withplum.emojibottomsheetdialog.view.recyclerview.EmojiRecyclerViewAdapter
 
 class EmojiPickerDialog(
     private val context: Context,
