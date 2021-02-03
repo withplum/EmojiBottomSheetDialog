@@ -6,6 +6,7 @@ A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported
 ## Usage
 
 ```kotlin
+
     private fun initializeEmojiCategoriesPreferred() {
         emojiItemViewList = EmojiCategoryTransformer().transform(initializeEmojiCategoryList())
     }
