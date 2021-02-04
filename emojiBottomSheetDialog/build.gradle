@@ -1,5 +1,7 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+apply plugin: "org.jetbrains.dokka"
+apply plugin: "com.vanniktech.maven.publish"
 
 android {
     compileSdkVersion COMPILE_SDK
@@ -17,7 +19,20 @@ android {
     }
 }
 
+mavenPublish {
+    targets {
+        // Modify the existing uploadArchives task
+        uploadArchives {
+            releaseRepositoryUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+            snapshotRepositoryUrl = "https://oss.sonatype.org/content/repositories/snapshots/"
+            repositoryUsername = SONATYPE_NEXUS_USERNAME
+            repositoryPassword = SONATYPE_NEXUS_PASSWORD
+        }
+    }
+}
+
 dependencies {
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
 
     // ------------ Material ------------

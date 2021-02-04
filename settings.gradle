@@ -1,3 +1,2 @@
-include ':emojiBottomSheetDialog'
-include ':app'
+include(':emojiBottomSheetDialog', ':app')
 rootProject.name = "EmojiBottomSheetDialog"

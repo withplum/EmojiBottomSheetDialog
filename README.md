@@ -1,3 +1,4 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.withplum/emojiBottomSheetDialog.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.withplum%22%20AND%20a:%22emojiBottomSheetDialog%22)
 # EmojiBottomSheetDialog
 A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported emojis.
 
@@ -40,3 +41,12 @@ A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+### Publishing
+The project uses [gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) to publish artifacts to maven central.
+
+To upload archives use the command:
+
+```
+./gradlew clean build emojiBottomSheetDialog:uploadArchives --no-daemon --no-parallel
+```
