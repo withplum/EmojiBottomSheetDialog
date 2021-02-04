@@ -16,22 +16,19 @@
 
         <TextView
             android:id="@+id/tv_bottom_sheet_title"
-            android:textAppearance="@style/EmojiBottomSheet.TextAppearance.H6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:padding="@dimen/dim_16"
+            android:textAppearance="@style/EmojiBottomSheet.TextAppearance.H6"
             android:textColor="@color/greyMid"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/emojiDialogTitle" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_emoji_category"
-            android:padding="@dimen/dim_16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/dim_16"
             tools:listitem="@layout/row_emoji" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
