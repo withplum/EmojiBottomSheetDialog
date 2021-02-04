@@ -8,9 +8,6 @@ allprojects {
 
         KOTLIN = '1.4.21'
 
-        VERSION_CODE = 1
-        VERSION_NAME = "1"
-
         Androidx = [
                 APPCOMPAT       : "1.2.0",
                 CONSTRAINTLAYOUT: "2.0.4",
