@@ -40,3 +40,12 @@ A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+### Publishing
+The project uses [gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) to publish artifacts to maven central.
+
+To upload archives use the command:
+
+```
+./gradlew clean build emojiBottomSheetDialog:uploadArchives --no-daemon --no-parallel
+```
