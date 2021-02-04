@@ -25,6 +25,8 @@ mavenPublish {
         uploadArchives {
             releaseRepositoryUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
             snapshotRepositoryUrl = "https://oss.sonatype.org/content/repositories/snapshots/"
+            repositoryUsername = SONATYPE_NEXUS_USERNAME
+            repositoryPassword = SONATYPE_NEXUS_PASSWORD
         }
     }
 }
