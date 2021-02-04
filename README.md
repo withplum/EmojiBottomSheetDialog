@@ -1,3 +1,4 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.withplum/emojiBottomSheetDialog.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.withplum%22%20AND%20a:%22emojiBottomSheetDialog%22)
 # EmojiBottomSheetDialog
 A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported emojis.
 
