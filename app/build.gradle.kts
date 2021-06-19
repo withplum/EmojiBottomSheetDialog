@@ -22,7 +22,7 @@ android {
 
 dependencies {
     implementation(project(":emojiBottomSheetDialog"))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
-    implementation("androidx.constraintlayout:constraintlayout:2.0.4")
-    implementation("androidx.appcompat:appcompat:1.2.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
+    implementation("androidx.constraintlayout:constraintlayout:_")
+    implementation("androidx.appcompat:appcompat:_")
 }
