@@ -1,5 +1,5 @@
 buildscript {
-    apply from: 'config/dependencies.gradle'
+    apply from: "config/dependencies.gradle"
     ext {
         kotlin_version = "$KOTLIN"
     }
@@ -12,7 +12,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:$ANDROID_GRADLE_PLUGIN"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$KOTLIN"
         classpath "com.vanniktech:gradle-maven-publish-plugin:0.13.0"
-        classpath 'org.jetbrains.dokka:dokka-gradle-plugin:1.4.20'
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:1.4.20"
     }
 }
 
