@@ -2,8 +2,6 @@ allprojects {
     ext {
         ANDROID_GRADLE_PLUGIN = '4.1.1'
 
-        KOTLIN = '1.4.21'
-
         Androidx = [
                 APPCOMPAT       : "1.2.0",
                 CONSTRAINTLAYOUT: "2.0.4",

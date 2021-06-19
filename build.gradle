@@ -1,16 +1,12 @@
 buildscript {
     apply from: "config/dependencies.gradle"
-    ext {
-        kotlin_version = "$KOTLIN"
-    }
-
     repositories {
         google()
         jcenter()
     }
     dependencies {
         classpath("com.android.tools.build:gradle:$ANDROID_GRADLE_PLUGIN")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$KOTLIN")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21")
         classpath("com.vanniktech:gradle-maven-publish-plugin:0.13.0")
         classpath("org.jetbrains.dokka:dokka-gradle-plugin:1.4.20")
     }

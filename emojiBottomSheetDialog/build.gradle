@@ -35,7 +35,7 @@ mavenPublish {
 
 dependencies {
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
 
     // ------------ Material ------------
     implementation("com.google.android.material:material:${Androidx.MATERIAL}")
