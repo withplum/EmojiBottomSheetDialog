@@ -1,8 +1,8 @@
 plugins {
-    id "com.android.library"
-    id "kotlin-android"
-    id "org.jetbrains.dokka"
-    id "com.vanniktech.maven.publish"
+    id ("com.android.library")
+    id ("kotlin-android")
+    id ("org.jetbrains.dokka")
+    id ("com.vanniktech.maven.publish")
 }
 
 android {
@@ -16,7 +16,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 }
@@ -35,14 +35,14 @@ mavenPublish {
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN")
 
     // ------------ Material ------------
-    implementation "com.google.android.material:material:${Androidx.MATERIAL}"
+    implementation("com.google.android.material:material:${Androidx.MATERIAL}")
 
     // ------------ Emojis ------------
-    api "androidx.emoji:emoji:${Androidx.EMOJI}"
+    api("androidx.emoji:emoji:${Androidx.EMOJI}")
 
     // ------------ Recyclerview ------------
-    implementation "androidx.recyclerview:recyclerview:${Androidx.RECYCLER_VIEW}"
+    implementation("androidx.recyclerview:recyclerview:${Androidx.RECYCLER_VIEW}")
 }
