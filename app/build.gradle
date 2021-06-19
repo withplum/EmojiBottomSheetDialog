@@ -5,12 +5,12 @@ plugins {
 
 android {
 
-    compileSdkVersion COMPILE_SDK
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "com.withplum.emojiapp"
-        minSdkVersion MIN_SDK
-        targetSdkVersion TARGET_SDK
+        minSdkVersion 23
+        targetSdkVersion 29
     }
 
     buildTypes {
