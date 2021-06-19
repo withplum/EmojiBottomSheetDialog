@@ -36,13 +36,9 @@ mavenPublish {
 dependencies {
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
+    implementation("com.google.android.material:material:1.2.1")
 
-    // ------------ Material ------------
-    implementation("com.google.android.material:material:${Androidx.MATERIAL}")
+    api("androidx.emoji:emoji:1.1.0")
 
-    // ------------ Emojis ------------
-    api("androidx.emoji:emoji:${Androidx.EMOJI}")
-
-    // ------------ Recyclerview ------------
-    implementation("androidx.recyclerview:recyclerview:${Androidx.RECYCLER_VIEW}")
+    implementation("androidx.recyclerview:recyclerview:1.1.0")
 }
