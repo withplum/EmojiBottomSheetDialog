@@ -1,0 +1,5 @@
+Bugfix: [ 'bugfix/**', 'bug/**' ]
+Enhancement: [ 'feature/**', 'enhancement/**' ]
+Release: 'release/**'
+Platform: 'platform/**'
+documentation: 'documentation/**'
