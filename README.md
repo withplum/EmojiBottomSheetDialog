@@ -45,8 +45,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ### Publishing
 The project uses [gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) to publish artifacts to maven central.
 
-To upload archives use the command:
+To upload archives use the command (after having put the appropriate credentials in gradle properties or env variables):
 
 ```
-./gradlew clean build emojiBottomSheetDialog:uploadArchives --no-daemon --no-parallel
+./gradlew clean build emojiBottomSheetDialog:publish --no-daemon --no-parallel
 ```
