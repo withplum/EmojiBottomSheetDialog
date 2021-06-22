@@ -1,0 +1,16 @@
+name: Compile Release Notes
+
+on:
+  push:
+    branches: [ 'master' ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  update_release_draft:
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Release Drafter
+        uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
