@@ -6,10 +6,10 @@ plugins {
 }
 
 android {
-    compileSdkVersion(29)
+    compileSdkVersion(30)
     defaultConfig {
         minSdkVersion(23)
-        targetSdkVersion(29)
+        targetSdkVersion(30)
     }
 
     compileOptions {
