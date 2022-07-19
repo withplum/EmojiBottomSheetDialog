@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.emoji.widget.EmojiTextView
+import androidx.emoji2.widget.EmojiTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.withplum.emojibottomsheetdialog.R
 

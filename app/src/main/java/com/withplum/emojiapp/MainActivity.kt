@@ -3,8 +3,7 @@ package com.withplum.emojiapp
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.emoji.widget.EmojiTextView
-import com.withplum.emojibottomsheetdialog.emoji.EmojInitListener
+import androidx.emoji2.widget.EmojiTextView
 import com.withplum.emojibottomsheetdialog.emoji.EmojiCategoryTransformer
 import com.withplum.emojibottomsheetdialog.emoji.EmojiCompatUtils
 import com.withplum.emojibottomsheetdialog.emoji.categories.ActivitiesCategory
