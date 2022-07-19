@@ -33,4 +33,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
     implementation("androidx.constraintlayout:constraintlayout:_")
     implementation("androidx.appcompat:appcompat:_")
+    implementation("androidx.emoji2:emoji2:_")
+    implementation("androidx.emoji2:emoji2-views:_")
 }
