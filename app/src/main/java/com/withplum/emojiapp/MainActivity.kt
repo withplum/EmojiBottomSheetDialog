@@ -5,7 +5,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.emoji2.widget.EmojiTextView
 import com.withplum.emojibottomsheetdialog.emoji.EmojiCategoryTransformer
-import com.withplum.emojibottomsheetdialog.emoji.EmojiCompatUtils
 import com.withplum.emojibottomsheetdialog.emoji.categories.ActivitiesCategory
 import com.withplum.emojibottomsheetdialog.emoji.categories.AnimalsNatureCategory
 import com.withplum.emojibottomsheetdialog.emoji.categories.Category
@@ -27,22 +26,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initializeEmojis()
-    }
-
-    private fun initializeEmojis() {
-        EmojiCompatUtils.initialize(applicationContext, object : EmojInitListener {
-            override fun onEmojisInitialized() {
-                emojisInitializedActions()
-            }
-
-            override fun onEmojisInitializedError() {
-                //throw exception
-            }
-        })
-    }
-
-    private fun emojisInitializedActions() {
         setContentView(R.layout.activity_main)
         initializeOnClickListeners()
         initializeEmojiCategoriesPreferred()

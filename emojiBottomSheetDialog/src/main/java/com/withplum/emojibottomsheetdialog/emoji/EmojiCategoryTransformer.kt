@@ -1,14 +1,11 @@
 package com.withplum.emojibottomsheetdialog.emoji
 
 import com.withplum.emojibottomsheetdialog.emoji.categories.Category
-import com.withplum.emojibottomsheetdialog.view.recyclerview.EmojiItemType
 import com.withplum.emojibottomsheetdialog.view.recyclerview.EmojiItemView
 
 class EmojiCategoryTransformer {
 
-    fun transform(categoryList: List<Category>): List<EmojiItemView> = transformCategoriesToEmojiItems(categoryList).filter {
-        it.type == EmojiItemType.TITLE || EmojiCompatUtils.hasEmojiGlyph(it.value)
-    }
+    fun transform(categoryList: List<Category>): List<EmojiItemView> = transformCategoriesToEmojiItems(categoryList)
 
     private fun transformCategoriesToEmojiItems(createEmojiList: List<Category>): List<EmojiItemView> {
         val list: MutableList<EmojiItemView> = mutableListOf()

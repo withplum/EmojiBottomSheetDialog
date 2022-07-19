@@ -48,7 +48,7 @@ class EmojiPickerDialog(
         emojiListRecyclerView = view.findViewById(R.id.rv_emoji_category)
         attachLayoutManager()
         emojiListRecyclerView.adapter = EmojiRecyclerViewAdapter(emojiItemViewList).apply {
-            emojiClickedListener = { unicode, view ->
+            emojiClickedListener = { unicode, _ ->
                 selectEmoji(unicode)
             }
         }
