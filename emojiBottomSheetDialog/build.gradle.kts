@@ -30,7 +30,8 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
     implementation("com.google.android.material:material:_")
 
-    api("androidx.emoji:emoji:_")
+    implementation("androidx.emoji2:emoji2:_")
+    implementation("androidx.emoji2:emoji2-views:_")
 
     implementation("androidx.recyclerview:recyclerview:_")
 }

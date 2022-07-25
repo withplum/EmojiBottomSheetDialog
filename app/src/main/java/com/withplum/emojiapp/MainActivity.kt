@@ -3,10 +3,7 @@ package com.withplum.emojiapp
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.emoji.widget.EmojiTextView
-import com.withplum.emojibottomsheetdialog.emoji.EmojInitListener
 import com.withplum.emojibottomsheetdialog.emoji.EmojiCategoryTransformer
-import com.withplum.emojibottomsheetdialog.emoji.EmojiCompatUtils
 import com.withplum.emojibottomsheetdialog.emoji.categories.ActivitiesCategory
 import com.withplum.emojibottomsheetdialog.emoji.categories.AnimalsNatureCategory
 import com.withplum.emojibottomsheetdialog.emoji.categories.Category
@@ -22,28 +19,12 @@ import com.withplum.emojibottomsheetdialog.view.recyclerview.EmojiItemView
 
 class MainActivity : AppCompatActivity() {
 
-    private val selectedEmoji: EmojiTextView by bind(R.id.etv_selected_emoji)
+    private val selectedEmoji: TextView by bind(R.id.etv_selected_emoji)
     private val selectedEmojiName: TextView by bind(R.id.tv_selected_emoji_name)
     private var emojiItemViewList: List<EmojiItemView> = emptyList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initializeEmojis()
-    }
-
-    private fun initializeEmojis() {
-        EmojiCompatUtils.initialize(applicationContext, object : EmojInitListener {
-            override fun onEmojisInitialized() {
-                emojisInitializedActions()
-            }
-
-            override fun onEmojisInitializedError() {
-                //throw exception
-            }
-        })
-    }
-
-    private fun emojisInitializedActions() {
         setContentView(R.layout.activity_main)
         initializeOnClickListeners()
         initializeEmojiCategoriesPreferred()
