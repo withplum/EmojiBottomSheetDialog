@@ -46,6 +46,7 @@ This results in the removal of:
 * `EmojInitListener`
 * `EmojiValues` which was mostly used internally.
 
+Initialization now happens internally via the [Emoji2](https://developer.android.com/jetpack/androidx/releases/emoji2).
 If you still need an initialization listener you should use the official API as described [here](https://developer.android.com/develop/ui/views/text-and-emoji/emoji2#add-initialization-listeners).
 The whole document [Support modern emoji - Android Developers](https://developer.android.com/develop/ui/views/text-and-emoji/emoji2) provides further details.
 
