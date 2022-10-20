@@ -39,6 +39,20 @@ A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported
     }
 ```
 
+## Breaking changes of version `2.0.0`
+In version `2.0.0` we migrated to [Emoji2](https://developer.android.com/jetpack/androidx/releases/emoji2).
+This results in the removal of:
+* `EmojiCompatUtils`
+* `EmojInitListener`
+* `EmojiValues` which was mostly used internally.
+
+Initialization now happens internally via the [Emoji2](https://developer.android.com/jetpack/androidx/releases/emoji2).
+If you still need an initialization listener you should use the official API as described [here](https://developer.android.com/develop/ui/views/text-and-emoji/emoji2#add-initialization-listeners).
+The whole document [Support modern emoji - Android Developers](https://developer.android.com/develop/ui/views/text-and-emoji/emoji2) provides further details.
+
+The same document will help you if you rely on AppCompat version lower than `1.4.0-alpha01` or on the [Emoji](https://developer.android.com/jetpack/androidx/releases/emoji)
+library itself which provides [these custom views](https://developer.android.com/reference/kotlin/androidx/emoji/widget/package-summary) for compatibility.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
