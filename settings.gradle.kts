@@ -1,7 +1,18 @@
-plugins {
-    // See https://jmfayard.github.io/refreshVersions
-    id("de.fayard.refreshVersions") version "0.40.2"
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
 
-include(":emojiBottomSheetDialog", ":app")
+    }
+}
 rootProject.name = "EmojiBottomSheetDialog"
+include(":app")
+include(":emojiBottomSheetDialog")
