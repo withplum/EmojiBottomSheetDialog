@@ -4,17 +4,35 @@ plugins {
 }
 
 android {
-    compileSdk = 31
+    namespace = "com.withplum.emojiapp"
+
+    val javaVersion = JavaVersion.VERSION_19
+    val jvm = 19
+
+    val androidCompileSdkVersion = 34
+    val androidMinSdkVersion = 23
+
+    compileSdk = androidCompileSdkVersion
 
     defaultConfig {
         applicationId = "com.withplum.emojiapp"
-        minSdk = 23
-        targetSdk = 31
+        minSdk = androidMinSdkVersion
+        targetSdk = androidCompileSdkVersion
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = javaVersion
+        targetCompatibility = javaVersion
+    }
+
+    kotlinOptions {
+        jvmTarget = "19"
+    }
+
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(jvm))
+        }
     }
 
     buildTypes {
@@ -30,7 +48,7 @@ android {
 
 dependencies {
     implementation(project(":emojiBottomSheetDialog"))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
-    implementation("androidx.constraintlayout:constraintlayout:_")
-    implementation("androidx.appcompat:appcompat:_")
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.constraintlayout)
+    implementation(libs.appcompat)
 }
