@@ -6,15 +6,30 @@ plugins {
 }
 
 android {
-    compileSdk = 31
-    defaultConfig {
-        minSdk = 23
-        targetSdk = 31
-    }
+    namespace = "com.withplum.emojibottomsheetdialog"
 
+    val javaVersion = JavaVersion.VERSION_19
+    val jvm = 19
+
+    val androidCompileSdkVersion = 34
+    val androidMinSdkVersion = 23
+
+    compileSdk = androidCompileSdkVersion
+
+    defaultConfig {
+        minSdk = androidMinSdkVersion
+    }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = javaVersion
+        targetCompatibility = javaVersion
+    }
+    kotlinOptions {
+        jvmTarget = "19"
+    }
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(jvm))
+        }
     }
 
     buildTypes {
@@ -26,12 +41,9 @@ android {
 }
 
 dependencies {
-
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
-    implementation("com.google.android.material:material:_")
-
-    implementation("androidx.emoji2:emoji2:_")
-    implementation("androidx.emoji2:emoji2-views:_")
-
-    implementation("androidx.recyclerview:recyclerview:_")
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.material)
+    implementation(libs.emoji2)
+    implementation(libs.emoji2.views)
+    implementation(libs.recyclerview)
 }
