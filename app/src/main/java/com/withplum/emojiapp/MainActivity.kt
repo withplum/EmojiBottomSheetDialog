@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     private fun showEmojiDialog() {
         EmojiPickerDialog.Builder(this@MainActivity, emojiItemViewList)
             .dismissWithAnimation(true)
-            .title(getString(R.string.emojiDialogTitle))
+            .title(getString(com.withplum.emojibottomsheetdialog.R.string.emojiDialogTitle))
             .cancelable(true)
             .listener(object : EmojiClickListener {
                 override fun emojiClicked(unicode: EmojiItemView) {
@@ -54,14 +54,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun initializeEmojiCategoryList(): List<Category> {
         return listOf(
-            ActivitiesCategory(getString(R.string.activitiesCategoryTitle)),
-            AnimalsNatureCategory(getString(R.string.animalsAndNatureTitle)),
-            FoodDrinkCategory(getString(R.string.foodAndDrinkTitle)),
-            FlagsCategory(getString(R.string.flagsTitle)),
-            ObjectsCategory(getString(R.string.objectsTitle)),
-            SmileysPeopleCategory(getString(R.string.smileysAndPeopleTitle)),
-            SymbolsCategory(getString(R.string.symbolsTitle)),
-            TravelPlacesCategory(getString(R.string.travelAndPlacesTitle))
+            ActivitiesCategory(getString(com.withplum.emojibottomsheetdialog.R.string.activitiesCategoryTitle)),
+            AnimalsNatureCategory(getString(com.withplum.emojibottomsheetdialog.R.string.animalsAndNatureTitle)),
+            FoodDrinkCategory(getString(com.withplum.emojibottomsheetdialog.R.string.foodAndDrinkTitle)),
+            FlagsCategory(getString(com.withplum.emojibottomsheetdialog.R.string.flagsTitle)),
+            ObjectsCategory(getString(com.withplum.emojibottomsheetdialog.R.string.objectsTitle)),
+            SmileysPeopleCategory(getString(com.withplum.emojibottomsheetdialog.R.string.smileysAndPeopleTitle)),
+            SymbolsCategory(getString(com.withplum.emojibottomsheetdialog.R.string.symbolsTitle)),
+            TravelPlacesCategory(getString(com.withplum.emojibottomsheetdialog.R.string.travelAndPlacesTitle))
         )
     }
 }
