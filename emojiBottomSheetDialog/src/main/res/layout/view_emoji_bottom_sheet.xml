@@ -22,7 +22,7 @@
             android:padding="@dimen/dim_16"
             android:textAppearance="@style/EmojiBottomSheet.TextAppearance.H6"
             android:textColor="@color/greyMid"
-            tools:text="@string/emojiDialogTitle" />
+            tools:text="Choose an emoji:" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_emoji_category"
