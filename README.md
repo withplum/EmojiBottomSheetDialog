@@ -62,5 +62,5 @@ The project uses [gradle-maven-publish-plugin](https://github.com/vanniktech/gra
 To upload archives use the command (after having put the appropriate credentials in gradle properties or env variables):
 
 ```
-./gradlew clean build emojiBottomSheetDialog:publish --no-daemon --no-parallel
+./gradlew clean build emojiBottomSheetDialog:publish
 ```

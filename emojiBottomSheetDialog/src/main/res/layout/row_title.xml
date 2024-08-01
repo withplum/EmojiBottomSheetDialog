@@ -8,4 +8,4 @@
     android:paddingTop="@dimen/dim_16"
     android:paddingBottom="@dimen/dim_16"
     android:textColor="@color/greyMid"
-    tools:text="@string/activitiesCategoryTitle" />
+    tools:text="Activity" />
