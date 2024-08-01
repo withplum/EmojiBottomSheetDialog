@@ -5,6 +5,7 @@ plugins {
 
 android {
     compileSdk = 31
+    namespace = "com.withplum.emojiapp"
 
     defaultConfig {
         applicationId = "com.withplum.emojiapp"

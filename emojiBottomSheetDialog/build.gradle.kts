@@ -6,6 +6,7 @@ plugins {
 }
 
 android {
+    namespace = "com.withplum.emojibottomsheetdialog"
     compileSdk = 31
     defaultConfig {
         minSdk = 23
