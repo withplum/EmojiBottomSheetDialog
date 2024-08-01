@@ -31,12 +31,10 @@
 
     <style name="EmojiBottomSheet.TextAppearance.H3" parent="EmojiBottomSheet.TextAppearance.Bold">
         <item name="android:textSize">@dimen/text_h3_size</item>
-        <item name="android:gravity">center</item>
     </style>
 
     <style name="EmojiBottomSheet.TextAppearance.H6" parent="EmojiBottomSheet.TextAppearance.Bold">
         <item name="android:textSize">@dimen/text_h6_size</item>
-        <item name="android:gravity">center</item>
     </style>
 
     <style name="EmojiBottomSheetDialogTheme">
