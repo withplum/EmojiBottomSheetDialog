@@ -23,11 +23,14 @@ The appearance of the Bottom Sheet can be customised by providing a custom style
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
         <item name="bottomSheetDialogTheme">@style/ModalBottomSheetDialog</item>
     </style>
 
-    <style name="ModalBottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
-        <item name="backgroundTint">@color/colorAccent</item>
+    <style name="ModalBottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="colorSurface">@color/white</item>
         <item name="emojiBottomSheetTitleTextAppearance">@style/MyCustomEmojiBottomTitleTextAppearance</item>
         <item name="emojiBottomSheetSectionHeaderTextAppearance">@style/MyCustomEmojiBottomSheetSectionHeaderTextAppearance
         </item>
@@ -49,6 +52,7 @@ The title and section headers can be styled by providing custom text appearances
 |--------------------|-----------------------------------------------|------------------------------------------------------|
 | **Title**          | `emojiBottomSheetTitleTextAppearance`         | `@style/TextAppearance.MaterialComponents.Headline6` |
 | **Section Header** | `emojiBottomSheetSectionHeaderTextAppearance` | `TextAppearance.MaterialComponents.Body1`            |
+| **Background**     | `colorSurface`                                | `?android:attr/colorSurface`                         |
 
 ### Initialize the dialog
 ```kotlin
