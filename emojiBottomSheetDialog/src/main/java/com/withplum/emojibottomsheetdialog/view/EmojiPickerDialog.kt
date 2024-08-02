@@ -1,5 +1,6 @@
 package com.withplum.emojibottomsheetdialog.view
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Resources
 import android.util.TypedValue
@@ -32,6 +33,7 @@ class EmojiPickerDialog(
         createBottomSheetDialog()
     }
 
+    @SuppressLint("InflateParams")
     private fun createBottomSheetDialog() {
         bottomSheetDialog.apply {
             layoutInflater.inflate(R.layout.view_emoji_bottom_sheet, null).apply {
