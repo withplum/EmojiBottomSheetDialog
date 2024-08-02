@@ -19,8 +19,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:padding="@dimen/dim_16"
-            android:textAppearance="@style/EmojiBottomSheet.TextAppearance.H6"
-            android:textColor="@color/greyMid"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             tools:text="Choose an emoji:" />
 
         <androidx.recyclerview.widget.RecyclerView
