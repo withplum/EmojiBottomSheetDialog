@@ -6,6 +6,51 @@ A nice Android bottom sheet dialog populated with AndroidX EmojiCompat supported
 
 ## Usage
 
+### Add the dependency
+
+```gradle
+dependencies {
+    implementation("com.withplum:emojiBottomSheetDialog:<latest-version>)
+}
+```
+
+### Style customization
+
+The appearance of the Bottom Sheet can be customised by providing a custom style like this example:
+
+```xml
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="bottomSheetDialogTheme">@style/ModalBottomSheetDialog</item>
+    </style>
+
+    <style name="ModalBottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="emojiBottomSheetTitleTextAppearance">@style/MyCustomEmojiBottomTitleTextAppearance</item>
+        <item name="emojiBottomSheetSectionHeaderTextAppearance">@style/MyCustomEmojiBottomSheetSectionHeaderTextAppearance
+        </item>
+    </style>
+
+    <style name="MyCustomEmojiBottomTitleTextAppearance" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/greyDark</item>
+    </style>
+
+    <style name="MyCustomEmojiBottomSheetSectionHeaderTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/greyMid</item>
+    </style>
+</resources>
+```
+
+The title and section headers can be styled by providing custom text appearances in the style.
+
+| Element            | Attribute                                     | Default value                                        |
+|--------------------|-----------------------------------------------|------------------------------------------------------|
+| **Title**          | `emojiBottomSheetTitleTextAppearance`         | `@style/TextAppearance.MaterialComponents.Headline6` |
+| **Section Header** | `emojiBottomSheetSectionHeaderTextAppearance` | `TextAppearance.MaterialComponents.Body1`            |
+
+### Initialize the dialog
 ```kotlin
 
     private fun initializeEmojiCategoriesPreferred() {
