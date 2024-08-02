@@ -4,12 +4,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/colorAccent</item>
+        <!--        <item name="android:windowBackground">@color/white</item>?-->
+        <item name="colorSurface">#FF000000</item>
         <item name="bottomSheetDialogTheme">@style/ModalBottomSheetDialog</item>
     </style>
 
     <style name="ModalBottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
-        <item name="backgroundTint">@color/colorAccent</item>
+        <!--        <item name="backgroundTint">@color/white</item>-->
         <item name="emojiBottomSheetTitleTextAppearance">@style/MyCustomEmojiBottomTitleTextAppearance</item>
         <item name="emojiBottomSheetSectionHeaderTextAppearance">@style/MyCustomEmojiBottomSheetSectionHeaderTextAppearance
         </item>
