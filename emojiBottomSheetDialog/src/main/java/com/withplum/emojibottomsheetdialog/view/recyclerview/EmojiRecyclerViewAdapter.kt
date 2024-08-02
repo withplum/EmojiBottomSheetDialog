@@ -8,7 +8,7 @@ import androidx.emoji2.widget.EmojiTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.withplum.emojibottomsheetdialog.R
 
-class EmojiRecyclerViewAdapter(
+internal class EmojiRecyclerViewAdapter(
     private val unicodeList: List<EmojiItemView>
 ) : RecyclerView.Adapter<EmojiRecyclerViewAdapter.EmojiListHolder>() {
 
