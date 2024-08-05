@@ -9,7 +9,8 @@
         android:id="@+id/etv_selected_emoji"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/EmojiBottomSheet.TextAppearance.H3"
+        android:textColor="@color/greyDark"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +22,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dim_8"
-        android:textAppearance="@style/EmojiBottomSheet.TextAppearance.Body1"
+        android:textColor="@color/greyDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etv_selected_emoji" />
+        app:layout_constraintTop_toBottomOf="@id/etv_selected_emoji"
+        tools:text="Mushroom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,9 @@
 package com.withplum.emojibottomsheetdialog.view
 
+import android.annotation.SuppressLint
 import android.content.Context
+import android.content.res.Resources
+import android.util.TypedValue
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -30,6 +33,7 @@ class EmojiPickerDialog(
         createBottomSheetDialog()
     }
 
+    @SuppressLint("InflateParams")
     private fun createBottomSheetDialog() {
         bottomSheetDialog.apply {
             layoutInflater.inflate(R.layout.view_emoji_bottom_sheet, null).apply {
@@ -37,8 +41,17 @@ class EmojiPickerDialog(
                 initializeViews(this)
             }
             title?.let { titleTextView.text = it }
+
+            applyTitleTextAppearance(context.theme)
             dismissWithAnimation = dismissWithAnim
             setCanceledOnTouchOutside(cancelable)
+        }
+    }
+
+    private fun applyTitleTextAppearance(theme: Resources.Theme) {
+        val typedValue = TypedValue()
+        if (theme.resolveAttribute(R.attr.emojiBottomSheetTitleTextAppearance, typedValue, true)) {
+            titleTextView.setTextAppearance(typedValue.resourceId)
         }
     }
 

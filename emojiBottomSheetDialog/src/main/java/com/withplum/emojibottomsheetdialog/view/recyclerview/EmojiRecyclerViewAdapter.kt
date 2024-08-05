@@ -1,5 +1,7 @@
 package com.withplum.emojibottomsheetdialog.view.recyclerview
 
+import android.content.res.Resources
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +10,7 @@ import androidx.emoji2.widget.EmojiTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.withplum.emojibottomsheetdialog.R
 
-class EmojiRecyclerViewAdapter(
+internal class EmojiRecyclerViewAdapter(
     private val unicodeList: List<EmojiItemView>
 ) : RecyclerView.Adapter<EmojiRecyclerViewAdapter.EmojiListHolder>() {
 
@@ -21,13 +23,22 @@ class EmojiRecyclerViewAdapter(
         return EmojiListHolder(
             when (viewType) {
                 EmojiItemType.TITLE.ordinal -> {
-                    LayoutInflater.from(parent.context).inflate(R.layout.row_title, parent, false)
+                    val holder = LayoutInflater.from(parent.context).inflate(R.layout.row_title, parent, false)
+                    holder.findViewById<TextView>(R.id.tv_title).applyHeaderTextAppearance(parent.context.theme)
+                    holder
                 }
                 else -> {
                     LayoutInflater.from(parent.context).inflate(R.layout.row_emoji, parent, false)
                 }
             }
         )
+    }
+
+    private fun TextView.applyHeaderTextAppearance(theme: Resources.Theme) {
+        val typedValue = TypedValue()
+        if (theme.resolveAttribute(R.attr.emojiBottomSheetSectionHeaderTextAppearance, typedValue, true)) {
+            setTextAppearance(typedValue.resourceId)
+        }
     }
 
     override fun onBindViewHolder(holder: EmojiListHolder, position: Int) {

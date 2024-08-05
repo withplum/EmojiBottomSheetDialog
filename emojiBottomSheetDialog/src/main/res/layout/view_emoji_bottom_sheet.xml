@@ -2,10 +2,8 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/view_help_bottom_sheet"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/ll_emoji_category_view_container"
@@ -20,8 +18,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:padding="@dimen/dim_16"
-            android:textAppearance="@style/EmojiBottomSheet.TextAppearance.H6"
-            android:textColor="@color/greyMid"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             tools:text="Choose an emoji:" />
 
         <androidx.recyclerview.widget.RecyclerView
