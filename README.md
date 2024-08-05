@@ -88,6 +88,24 @@ The title and section headers can be styled by providing custom text appearances
     }
 ```
 
+## Breaking changes of version `3.0.0`
+
+1. Certain APIs have become `internal`.
+2. In version `3.0.0` the library uses Java 17. You'll have to add the following to your build file:
+
+```kotlin
+android {
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+```
+
 ## Breaking changes of version `2.0.0`
 In version `2.0.0` we migrated to [Emoji2](https://developer.android.com/jetpack/androidx/releases/emoji2).
 This results in the removal of:
