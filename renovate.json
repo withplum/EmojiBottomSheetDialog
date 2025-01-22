@@ -1,0 +1,50 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "timezone": "Europe/Athens",
+  "schedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
+  ],
+  "prHourlyLimit": 3,
+  "prConcurrentLimit": 5,
+  "updateNotScheduled": false,
+  "additionalReviewers": [
+    "team:android"
+  ],
+  "assignAutomerge": true,
+  "addLabels": [
+    "Dependency Updates"
+  ],
+  "ignorePaths": [
+    ".github/**"
+  ],
+  "major": {
+    "minimumReleaseAge": "30 days",
+    "internalChecksFilter": "strict",
+    "automerge": true
+  },
+  "minor": {
+    "minimumReleaseAge": "7 days",
+    "internalChecksFilter": "strict",
+    "automerge": true
+  },
+  "patch": {
+    "minimumReleaseAge": "1 days",
+    "internalChecksFilter": "strict",
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "groupName": "AGP and friends",
+      "matchPackageNames": [
+        "/com.android.library/",
+        "/com.android.application/",
+        "/com.android.tools.build:gradle/"
+      ]
+    }
+  ]
+}
