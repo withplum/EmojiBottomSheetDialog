@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
     namespace = "com.withplum.emojiapp"
 
     defaultConfig {
         applicationId = "com.withplum.emojiapp"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
     }
 
     compileOptions {
