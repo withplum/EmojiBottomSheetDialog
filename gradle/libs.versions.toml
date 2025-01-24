@@ -1,0 +1,26 @@
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-gradle-plugin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+gradle-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "gradleMavenPublishPlugin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+
+[versions]
+androidGradlePlugin = "8.8.0"
+dokka = "1.9.20"
+kotlin = "2.0.0"
+gradleMavenPublishPlugin = "0.29.0"
+appcompat = "1.7.0"
+constraintlayout = "2.1.4"
+emoji2 = "1.4.0"
+material = "1.12.0"
+recyclerview = "1.3.2"
+
+[libraries]
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+emoji2 = { module = "androidx.emoji2:emoji2", version.ref = "emoji2" }
+emoji2-views = { module = "androidx.emoji2:emoji2-views", version.ref = "emoji2" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }

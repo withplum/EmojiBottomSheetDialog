@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.gradle.plugin)
 }
 
 android {
@@ -35,7 +35,7 @@ android {
 
 dependencies {
     implementation(project(":emojiBottomSheetDialog"))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
-    implementation("androidx.constraintlayout:constraintlayout:_")
-    implementation("androidx.appcompat:appcompat:_")
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.constraintlayout)
+    implementation(libs.appcompat)
 }
