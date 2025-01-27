@@ -1,13 +1,13 @@
 plugins {
-    id("com.android.library")
-    id("kotlin-android")
-    id("org.jetbrains.dokka")
-    id("com.vanniktech.maven.publish")
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.gradle.plugin)
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.gradle.maven.publish)
 }
 
 android {
     namespace = "com.withplum.emojibottomsheetdialog"
-    compileSdk = 34
+    compileSdk = 35
     defaultConfig {
         minSdk = 23
     }
@@ -31,11 +31,11 @@ android {
 
 dependencies {
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
-    implementation("com.google.android.material:material:_")
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.material)
 
-    implementation("androidx.emoji2:emoji2:_")
-    implementation("androidx.emoji2:emoji2-views:_")
+    implementation(libs.emoji2)
+    implementation(libs.emoji2.views)
 
-    implementation("androidx.recyclerview:recyclerview:_")
+    implementation(libs.recyclerview)
 }

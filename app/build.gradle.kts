@@ -1,16 +1,16 @@
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.gradle.plugin)
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
     namespace = "com.withplum.emojiapp"
 
     defaultConfig {
         applicationId = "com.withplum.emojiapp"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
     }
 
     compileOptions {
@@ -35,7 +35,7 @@ android {
 
 dependencies {
     implementation(project(":emojiBottomSheetDialog"))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:_")
-    implementation("androidx.constraintlayout:constraintlayout:_")
-    implementation("androidx.appcompat:appcompat:_")
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.constraintlayout)
+    implementation(libs.appcompat)
 }
