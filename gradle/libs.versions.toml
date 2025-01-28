@@ -8,7 +8,7 @@ dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 [versions]
 androidGradlePlugin = "8.8.0"
 dokka = "1.9.20"
-kotlin = "2.1.0"
+kotlin = "2.1.10"
 gradleMavenPublishPlugin = "0.29.0"
 appcompat = "1.7.0"
 constraintlayout = "2.2.0"
