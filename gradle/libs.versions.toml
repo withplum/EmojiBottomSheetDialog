@@ -6,7 +6,7 @@ gradle-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "gra
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 
 [versions]
-androidGradlePlugin = "8.8.1"
+androidGradlePlugin = "8.8.2"
 dokka = "2.0.0"
 kotlin = "2.1.10"
 gradleMavenPublishPlugin = "0.30.0"
