@@ -1,0 +1,23 @@
+name: Pull Request
+
+on:
+  pull_request:
+
+jobs:
+  build-debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7
+
+      - name: Setup JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: zulu
+          java-version: '17'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      - name: Assemble Debug
+        run: ./gradlew assembleDebug

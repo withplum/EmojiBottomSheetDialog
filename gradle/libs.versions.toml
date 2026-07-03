@@ -1,12 +1,12 @@
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
-kotlin-gradle-plugin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 gradle-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "gradleMavenPublishPlugin" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 
 [versions]
-androidGradlePlugin = "8.13.2"
+androidGradlePlugin = "9.2.1"
 dokka = "2.0.0"
 kotlin = "2.4.0"
 gradleMavenPublishPlugin = "0.31.0"
