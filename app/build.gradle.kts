@@ -8,8 +8,8 @@ android {
 
     defaultConfig {
         applicationId = "com.withplum.emojiapp"
-        minSdk = 23
-        targetSdk = 35
+        minSdk = 24
+        targetSdk = 37
     }
 
     compileOptions {
