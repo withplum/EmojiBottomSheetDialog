@@ -7,7 +7,7 @@ dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 
 [versions]
 androidGradlePlugin = "9.4.1"
-dokka = "2.0.0"
+dokka = "2.2.0"
 kotlin = "2.4.20"
 gradleMavenPublishPlugin = "0.31.0"
 appcompat = "1.8.0"
