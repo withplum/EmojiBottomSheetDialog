@@ -12,7 +12,7 @@ kotlin = "2.4.20"
 gradleMavenPublishPlugin = "0.31.0"
 appcompat = "1.8.0"
 constraintlayout = "2.2.2"
-emoji2 = "1.6.0"
+emoji2 = "1.7.0"
 material = "1.14.0"
 recyclerview = "1.4.0"
 
