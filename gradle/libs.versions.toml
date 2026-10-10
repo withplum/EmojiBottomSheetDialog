@@ -9,7 +9,7 @@ dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 androidGradlePlugin = "9.4.1"
 dokka = "2.2.0"
 kotlin = "2.4.20"
-gradleMavenPublishPlugin = "0.31.0"
+gradleMavenPublishPlugin = "0.37.0"
 appcompat = "1.8.0"
 constraintlayout = "2.2.2"
 emoji2 = "1.7.0"
